@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maczo digital store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="icon" href="files/images/logo.jpg">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-size: 30px;">Maczo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active mr-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active " href="#about">About</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container mt-3">
+            <div class="row ps-2">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center ">
+                    <h1 class="head1 pt-5" >Maczo Your online ,<br>Digital Store</h1>
+                    <p class="lead mt-3">Discover top-quality, refurbished iPhones, MacBooks, and iPads. Every product is tested, certified, and guaranteed for exceptional performance. Enjoy sustainable and affordable Apple technology.</p>
+                    <a href="#contacts" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 ">
+                    <img src="files/undraw_hello_ccwj.svg" class="img-fluid rounded mt-5" alt="Placeholder Image" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Updated Product Card Styles */
+        .product-card {
+            width: 100%; /* Changed from fixed width */
+            max-width: 320px; /* Maximum width for larger screens */
+            margin: 0 auto 1.5rem; /* Center cards */
+        }
+        
+        .product-image {
+            height: 200px; /* Reduced height for mobile */
+            width: 100%;
+            object-fit: contain;
+        }
+        
+        /* Updated Service Card Styles */
+        .custom-card {
+            width: 100% !important; /* Changed from 50vh */
+            max-width: 400px; /* Maximum width */
+            margin: 1rem auto; /* Center cards */
+        }
+        
+        /* Responsive Text Sizes */
+        @media (max-width: 768px) {
+            .product-title {
+                font-size: 1.1rem;
+            }
+            
+            .features-list {
+                font-size: 0.8rem;
+            }
+            
+            .price {
+                font-size: 1.2rem;
+            }
+            
+            .btn-primary {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .para1 {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Ensure images are responsive */
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        
+        /* Button centering for mobile */
+        @media (max-width: 576px) {
+            .button {
+                width: 100%;
+            }
+        }
+        </style>
+        
+        <!-- Updated Products Section -->
+        <section id="products">
+            <div class="container py-1">
+                <h2 class="text-center mb-5 head1">Our Products</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">New Model</span>
+                            <img src="files/images/image copy 2.png" class="product-image w-100" alt="Phone">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">SmartPhone Max 5G</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-camera text-primary me-2"></i>108MP Triple Camera</li>
+                            <li class="mb-2"><i class="fas fa-expand text-primary me-2"></i>6.7" AMOLED Display</li>
+                            <li class="mb-2"><i class="fas fa-bolt text-primary me-2"></i>5G Connectivity</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>5000mAh Battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$799</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">Best Seller</span>
+                            <img src="files/images/Screenshot 2025-02-05 054215.png" class="product-image w-100" alt="Tablet">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">PowerTab S2</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-tablet-alt text-primary me-2"></i>10.5" 2K Display</li>
+                            <li class="mb-2"><i class="fas fa-pencil-alt text-primary me-2"></i>Stylus Included</li>
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Snapdragon 888</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>14hrs Battery Life</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$599</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">15% OFF</span>
+                            <img src="files/images/image copy.png" class="product-image w-100" alt="Laptop">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">UltraBook Pro X1</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Intel Core i7 12th Gen</li>
+                            <li class="mb-2"><i class="fas fa-memory text-primary me-2"></i>16GB DDR5 RAM</li>
+                            <li class="mb-2"><i class="fas fa-hdd text-primary me-2"></i>1TB PCIe SSD</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>Up to 10hrs battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$1,299</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Product cards remain the same but now responsive -->
+                    <!-- ... existing product cards ... -->
+                </div>
+                <button class="button mx-auto mt-3">
+                    <a href="products.html">More Products</a>
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+            </div>
+        </section>
+        
+        <!-- Updated Services Section -->
+        <section id="services" class="py-2">
+            <div class="container">
+                <h2 class="text-center mb-5 head1">Our Services</h2>
+                <p class="text-center para1 mb-5">Welcome to our digital store! Enjoy fast delivery...</p>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="files/images/computer-repair-concept.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Laptop service</h5>
+                              <p class="card-text">Expert laptop repairs: hardware, software, upgrades.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Repeat for other service cards -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="files/images/computer-repair-concept.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Laptop service</h5>
+                              <p class="card-text">Expert laptop repairs: hardware, software, upgrades.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card p-3 mx-auto" style="width: 18rem;">
+                            <img class="card-img-top" src="files/images/computer-repair-concept.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Laptop service</h5>
+                              <p class="card-text">Expert laptop repairs: hardware, software, upgrades.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <style>
+            /* About Page Styles */
+            .about-hero {
+
+                height: 60vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+            }
+        
+            .value-card {
+                background: #f8f9fa;
+                border-radius: 15px;
+                transition: transform 0.3s;
+                padding: 2rem;
+                margin-bottom: 1.5rem;
+            }
+        
+            .value-card:hover {
+                transform: translateY(-10px);
+            }
+        
+            .team-card {
+                border: none;
+                overflow: hidden;
+                transition: transform 0.3s;
+            }
+        
+            .team-card img {
+                height: 300px;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+        
+            .team-card:hover {
+                transform: translateY(-10px);
+            }
+        
+            .team-card:hover img {
+                transform: scale(1.1);
+            }
+        
+            .stat-number {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #0d6efd;
+            }
+        
+            .sustainability-section {
+                background: #f8f9fa;
+                padding: 4rem 0;
+            }
+        </style>
+        
+        <!-- About Section -->
+        <section id="about">
+            <!-- About Hero -->
+            <div class="about-hero">
+                <div class="container">
+                    <h1 class="display-4 mb-4">About Maczo Digital Store</h1>
+                    <p class="lead">Redefining Tech, One Refurbished Device at a Time</p>
+                </div>
+            </div>
+        
+            <!-- Our Story -->
+            <div class="container py-2">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="head1 mb-4">Our Journey</h2>
+                        <p class="para1">Founded in 2020, Maczo began as a passion project between three tech enthusiasts who believed in making premium Apple technology accessible to everyone. What started in a small garage in San Francisco has now transformed into a trusted name in refurbished electronics across India.</p>
+                        <p class="para1">We combine cutting-edge technology with sustainable practices to deliver devices that perform like new while reducing electronic waste. Every product we sell is a step toward a greener planet.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="files/images/image copy 3.png" alt="Our Team" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Stats -->
+            <div class="container text-center py-5">
+                <div class="row g-4">
+                    <div class="col-md-3 col-6">
+                        <div class="value-card">
+                            <div class="stat-number">15K+</div>
+                            <p>Devices Refurbished</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="value-card">
+                            <div class="stat-number">98%</div>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="value-card">
+                            <div class="stat-number">5M+</div>
+                            <p>E-Waste Reduced</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="value-card">
+                            <div class="stat-number">150+</div>
+                            <p>5-Star Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Our Values -->
+            <div class="container py-5">
+                <h2 class="text-center head1 mb-5">Our Core Values</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="value-card text-center">
+                            <i class="fas fa-recycle fa-3x text-primary mb-3"></i>
+                            <h4>Sustainability First</h4>
+                            <p>We extend device lifecycles through expert refurbishment, preventing tons of e-waste annually.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card text-center">
+                            <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                            <h4>Quality Guaranteed</h4>
+                            <p>Every device undergoes 72-point inspection and premium refurbishment process.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card text-center">
+                            <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                            <h4>Customer Focused</h4>
+                            <p>1-year warranty and 30-day returns - because your trust matters most.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Team Section -->
+            <div class="container py-5">
+                <h2 class="text-center head1 mb-5">Meet Our Tech Experts</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="team-card">
+                            <img src="files/images/team1.jpg" class="img-fluid" alt="CEO">
+                            <div class="p-3">
+                                <h5 class="mt-3">Michael Chen</h5>
+                                <p class="text-muted">CEO & Founder</p>
+                                <p>20+ years in tech innovation and sustainable business practices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card">
+                            <img src="files/images/team2.jpg" class="img-fluid" alt="Tech Lead">
+                            <div class="p-3">
+                                <h5 class="mt-3">Sarah Johnson</h5>
+                                <p class="text-muted">Head of Refurbishment</p>
+                                <p>Apple-certified technician with 15 years experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card">
+                            <img src="files/images/team3.jpg" class="img-fluid" alt="Support Lead">
+                            <div class="p-3">
+                                <h5 class="mt-3">David Martinez</h5>
+                                <p class="text-muted">Customer Experience Lead</p>
+                                <p>Dedicated to creating exceptional customer journeys</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Sustainability Section -->
+            <div class="sustainability-section">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <h2 class="head9 mb-4">Our Green Promise</h2>
+                            <p class="para9">At Maczo, sustainability isn't just a buzzword - it's our business model. For every device sold:</p>
+                            <ul class="para9">
+                                <li>We recycle 100% of replaced components</li>
+                                <li>Plant 5 trees through our partnership with OneTreePlanted</li>
+                                <li>Donate 3% of profits to e-waste management initiatives</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="files/images/makeup-brush-eyeglasses-cactus-plant-white-flower-bouquet-with-laptop-blue-background.jpg" alt="Sustainability" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Testimonials -->
+            <div class="container py-5">
+                <h2 class="text-center head1 mb-5">What Our Customers Say</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="files/images/user1.jpg" alt="User" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5>Emily R.</h5>
+                                    <p class="text-muted">San Francisco</p>
+                                </div>
+                            </div>
+                            <p>"My MacBook from Maczo works better than my previous brand-new one! Incredible quality and service."</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="files/images/user2.jpg" alt="User" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5>James L.</h5>
+                                    <p class="text-muted">New York</p>
+                                </div>
+                            </div>
+                            <p>"Finally found a reliable source for quality refurbished iPhones. 10/10 would recommend!"</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="files/images/user3.jpg" alt="User" class="rounded-circle me-3" width="60">
+                                <div>
+                                    <h5>Sophia M.</h5>
+                                    <p class="text-muted">Austin</p>
+                                </div>
+                            </div>
+                            <p>"The 1-year warranty gave me complete peace of mind. Truly a customer-first company."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Update Footer -->
+       
+        <!-- Add Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </section>
+
+ <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h4>Maczo</h4>
+                        <p>Making Technology Sustainable</p>
+                        <div class="social-links">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#products" class="text-white">Shop Now</a></li>
+                            <li><a href="#services" class="text-white">Services</a></li>
+                            <li><a href="#about" class="text-white">Our Story</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <p>123 Tech Valley, San Francisco<br>contact@maczodigital.com<br>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p>&copy; 2023 Maczo Digital. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Navbar Example</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="files/images/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="headerr">Maczo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active mr-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active " href="#about">About</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="products">
+        <div class="container py-1 ">
+            <h1 class="head1" style="text-align: center;">Our Products</h1>
+            <div class="row g-4 mt-5">
+                <!-- Product Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">15% OFF</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Laptop">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">UltraBook Pro X1</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Intel Core i7 12th Gen</li>
+                            <li class="mb-2"><i class="fas fa-memory text-primary me-2"></i>16GB DDR5 RAM</li>
+                            <li class="mb-2"><i class="fas fa-hdd text-primary me-2"></i>1TB PCIe SSD</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>Up to 10hrs battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$1,299</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">New Model</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Phone">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">SmartPhone Max 5G</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-camera text-primary me-2"></i>108MP Triple Camera</li>
+                            <li class="mb-2"><i class="fas fa-expand text-primary me-2"></i>6.7" AMOLED Display</li>
+                            <li class="mb-2"><i class="fas fa-bolt text-primary me-2"></i>5G Connectivity</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>5000mAh Battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$799</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">Best Seller</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Tablet">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">PowerTab S2</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-tablet-alt text-primary me-2"></i>10.5" 2K Display</li>
+                            <li class="mb-2"><i class="fas fa-pencil-alt text-primary me-2"></i>Stylus Included</li>
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Snapdragon 888</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>14hrs Battery Life</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$599</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-1 mt-5">
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">15% OFF</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Laptop">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">UltraBook Pro X1</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Intel Core i7 12th Gen</li>
+                            <li class="mb-2"><i class="fas fa-memory text-primary me-2"></i>16GB DDR5 RAM</li>
+                            <li class="mb-2"><i class="fas fa-hdd text-primary me-2"></i>1TB PCIe SSD</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>Up to 10hrs battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$1,299</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">New Model</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Phone">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">SmartPhone Max 5G</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-camera text-primary me-2"></i>108MP Triple Camera</li>
+                            <li class="mb-2"><i class="fas fa-expand text-primary me-2"></i>6.7" AMOLED Display</li>
+                            <li class="mb-2"><i class="fas fa-bolt text-primary me-2"></i>5G Connectivity</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>5000mAh Battery</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$799</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-card p-3 mx-auto">
+                        <div class="position-relative">
+                            <span class="badge">Best Seller</span>
+                            <img src="https://via.placeholder.com/300x250" class="product-image w-100" alt="Tablet">
+                        </div>
+                        <h3 class="product-title mt-3 mb-2">PowerTab S2</h3>
+                        <ul class="features-list list-unstyled">
+                            <li class="mb-2"><i class="fas fa-tablet-alt text-primary me-2"></i>10.5" 2K Display</li>
+                            <li class="mb-2"><i class="fas fa-pencil-alt text-primary me-2"></i>Stylus Included</li>
+                            <li class="mb-2"><i class="fas fa-microchip text-primary me-2"></i>Snapdragon 888</li>
+                            <li class="mb-2"><i class="fas fa-battery-full text-primary me-2"></i>14hrs Battery Life</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="price">$599</span>
+                            <button class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
